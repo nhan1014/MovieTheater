@@ -17,4 +17,5 @@ public class ActorController {
 	public Iterable<Actors> all() {
 	    return actorService.findAll();
 	}
+	
 }
