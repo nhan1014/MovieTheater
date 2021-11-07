@@ -34,4 +34,7 @@ public class Movies {
 	@OneToMany(mappedBy = "actorId", cascade = CascadeType.ALL)
 	private List<Actors> listOfActors = new ArrayList<>();
 	
+	@Column(columnDefinition = "varchar(200)", nullable = true)
+	private String moviePoster;
+	
 }
